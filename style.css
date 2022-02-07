@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Playfair+Display&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #abadb6 16.62%, #252525 85.61%);
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: black;
+}
+.logo{
+    height: 72px;
+}
+.nav{
+    display: flex;
+    gap: 26px;
+    color: #ffffff;   
+}
+.nav-item{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.menu{
+    list-style: none;
+    float:left;
+}
+.menu li{
+    position:relative;
+    float:left;
+}
+.menu li a{
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{
+    background:rgb(0, 0, 0);
+}
+.menu li  ul{
+    position:absolute;
+    top:30px;
+    left:0;
+    background-color:#333;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:none;
+    display:block;
+    min-width:150px;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: right;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-right: 300px;
+}
+.main-search{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 64px;
+}
+.sub-title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+.search-button{
+    background-color: #ffffff;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+}
+.search-bar{
+    border: none;
+    border-radius: 30px;
+    width: 550px;
+    height: 30px;
+    padding: 10px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+.main-img{
+    width: fit-content;
+}
